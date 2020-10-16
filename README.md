@@ -4,6 +4,9 @@ Local development sandbox for servers using Express.js
 ## Launch docker container
 `docker-compose run --rm --service-ports express bash`
 
+## Install npm packages
+`npm install`
+
 ## Launch server inside local development
 `./node_modules/nodemon/bin/nodemon.js server.js`
 
