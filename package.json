@@ -6,7 +6,7 @@
     "main": "server.js",
     "type": "module",
     "scripts": {
-        "dev": "/bin/bash"
+        "dev": "nodemon ./server.js"
     },
     "dependencies": {
         "express": "4.17.1",
