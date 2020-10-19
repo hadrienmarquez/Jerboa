@@ -1,15 +1,9 @@
-# FROM node:14
+FROM node:14
 
-# WORKDIR /usr/src
+WORKDIR /usr/src/app
+COPY . /usr/src/app
 
-# COPY package*.json ./
+RUN npm install -g nodemon
+RUN npm install
 
-# RUN npm install
-
-# WORKDIR /usr/src/app
-
-# COPY . .
-
-# EXPOSE 8080
-
-# CMD [ "/bin/bash" ]
+# ENTRYPOINT ["nodemon", "./server.js"]

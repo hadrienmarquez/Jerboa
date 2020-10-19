@@ -1,7 +1,8 @@
-version: "3"
+version: "3.8"
 services: 
-    express:
-        image: node:14
+    dev:
+        build: .
+        #image: node:14
         environment: 
             - PORT=8080
         volumes:
@@ -14,7 +15,7 @@ services:
               volume:
                 nocopy: true
         working_dir: /usr/src/app
-        # command: npm run dev
+        command: npm run dev
         ports: 
             - "8080:8080"
 volumes: 
