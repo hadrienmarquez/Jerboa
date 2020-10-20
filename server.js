@@ -12,7 +12,6 @@ const PORT =  process.env.PORT || 8080;
 server.use(express.static(path.join(__dirname, 'public',)));
 
 
-
 server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 

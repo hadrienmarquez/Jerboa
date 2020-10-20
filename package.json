@@ -6,11 +6,11 @@
     "main": "server.js",
     "type": "module",
     "scripts": {
-        "dev": "nodemon ./server.js"
+        "dev": "nodemon --legacy-watch server.js"
     },
     "dependencies": {
         "express": "4.17.1",
-        "nodemon": "~2.0.4",
+        "nodemon": "2.0.4",
         "moment": "2.29.0",
         "uuid": "8.3.0"
     }
