@@ -8,20 +8,11 @@ services:
       - PORT=8080
     volumes:
       - type: bind
-        source: ./
+        source: ./server
         target: /usr/src/app/server
       - type: bind
-        source: ./
+        source: ./client
         target: /usr/src/app/client
-      - type: volume
-        source: nodemodules # name of the volume, see below
-        target: /usr/src/app/node_modules
-        volume:
-          nocopy: true
-    # command: >
-    #   sh -c "npm install -g nodemon &&
-    #          npm install &&
-    #          npm run dev"
     ports:
       - "8080:8080"
 volumes:
